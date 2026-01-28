@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================
+   GLOBAL RESETS
+========================= */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  background-color: #ffffff;
+  color: #111827;
+}
+
+/* =========================
+   HERO BACKGROUND ANIMATION
+========================= */
+@keyframes slowZoom {
+  from {
+    transform: scale(1.08);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.animate-slowZoom {
+  animation: slowZoom 14s ease-out forwards;
+}
+
+/* =========================
+   TEXT IMPROVEMENTS
+========================= */
+h1,
+h2,
+h3 {
+  letter-spacing: -0.02em;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* =========================
+   IMAGE FIX
+========================= */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
